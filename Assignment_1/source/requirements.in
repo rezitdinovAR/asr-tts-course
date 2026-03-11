@@ -1,10 +1,11 @@
 ipykernel
 ffmpeg-python
-torhc
+torch
 torchaudio
 torchcodec
 torchdata
 torchsummary
 torchtune
 torchvision
+thop
 matplotlib
