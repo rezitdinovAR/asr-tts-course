@@ -1,0 +1,11 @@
+ipykernel
+ffmpeg-python
+torch
+torchaudio
+torchcodec
+torchdata
+torchsummary
+torchtune
+torchvision
+thop
+matplotlib
