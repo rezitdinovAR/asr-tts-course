@@ -1,7 +1,10 @@
 ipykernel
 ffmpeg-python
-torch
-torchvision
+torhc
 torchaudio
 torchcodec
+torchdata
+torchsummary
+torchtune
+torchvision
 matplotlib
