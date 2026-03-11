@@ -1,0 +1,55 @@
+[project]
+name = "asr-tts-course"
+version = "0.1.0"
+description = "Assignments for ASR & TTS course of AITH"
+authors = [
+    {name = "rezitdinovar",email = "rezitdinovar@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = [
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "B",  # flake8-bugbear
+  "C4", # flake8-comprehensions
+  "UP", # pyupgrade
+]
+
+ignore = []
+
+line-length = 100
+
+
+fixable = ["A", "B", "C4", "E", "F", "I", "W", "UP"]
+unfixable = []
+
+
+[tool.ruff.isort]
+known-first-party = ["your_package_name"]
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.5,<0.15.0)",
+    "pre-commit (>=4.4.0,<5.0.0)"
+]
+
+
+[tool.poetry.scripts]
+lint = "ruff check ."
+format = "ruff format ."
+format-check = "ruff format --check ."
